@@ -27,7 +27,7 @@
         </ul>
       </nav>
       <section class="download">
-        <h2 class="download__title  download__title--hidden">Скачать приложение из маркета</h2> /*скрыто*/
+        <h2 class="download__title  download__title--hidden">Скачать приложение из маркета</h2> /* --скрыто-- */
         <a href="https://www.apple.com/ru/itunes/" class="btn  btn--white">Скачать приложение</a>
         <a href="https://www.apple.com/ru/itunes/" class="download__link">Itunes</a>
         <a href="https://play.google.com/store" class="download__link">Google play</a>
@@ -35,5 +35,47 @@
         <p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </section>
     </header>
+    <main>
+      <section class="features">
+        <header class="features__slogan">
+          <h2 class="features__title">Наши преимущества</h2> /* --скрыто-- */
+          <p class="features__text">Устали от серости мегаполиса?</p>
+          <p class="features__text">Нам есть, что вам  предложить!</p>
+        </header>
+        <ul class="features__list">
+          <li class="features__item">
+            <h3 class="features__subtitle">Поднимает настроение</h3>
+            <p class="features__desc">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          </li>
+          <li class="features__item">
+            <h3 class="features__subtitle">Меняет мир вокруг</h3>
+            <p class="features__desc">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </li>
+          <li class="features__item">
+            <h3 class="features__subtitle">Заводит новых друзей</h3>
+            <p class="features__desc">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+          </li>
+        </ul>
+      </section>
+      <section class="reviews">
+        <h2 class="reviews__title">Отзывы о приложении</h2> /* --скрыто-- */
+        <div class="reviews__slider-wrapper  slider">
+          <input type="radio" id="btn-1" name="toggle">
+          <input type="radio" id="btn-2" name="toggle" checked>
+          <input type="radio" id="btn-3" name="toggle">
+          <div class="slider__controls">
+            <label for="btn-1"></label>
+            <label for="btn-2"></label>
+            <label for="btn-3"></label>
+          </div>
+          <div class="reviews__list  slider__inner">
+            <blockquote class="reviews__item  slider__item">
+              <cite class="reviews__author-name">Николай Петров</cite>
+              <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
