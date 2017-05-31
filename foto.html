@@ -30,7 +30,7 @@
     </header>
     <main>
       <section class="foto-users">
-        <header class="foto-users__header">
+        <header class="foto-users__header  lead">
           <h2 class="foto-users__title">Фотографии наших пользователей с комментариями</h2> <!--скрыто-->
           <p class="foto-users__header-text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
         </header>
@@ -127,6 +127,43 @@
             </blockquote>
           </li>
         </ul>
+      </section>
+      <section class="effects">
+        <header class="effects__header  lead">
+          <h2 class="effects__title">Эффекты для обработки фотографий</h2> <!--скрыто-->
+          <p class="effects__text">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+        </header>
+        <form action="https://echo.htmlacademy.ru/" method="get" class="effects__form">
+          <div class="effects__img">
+            <img src="http://placehold.it/280x374" width="280" height="374" alt="зимняя дорога">
+          </div>
+          <div class="effects__wrapper">
+            <input type="checkbox" name="crop" id="crop-field" checked>
+            <input type="checkbox" name="fill" id="fill-field">
+            <input type="checkbox" name="contrast" id="contrast-field">
+            <div class="effects__signature">
+              <label for="crop-field">Обрезать</label> <!--скрыто-->
+              <label for="fill-field">Залить цветом</label> <!--скрыто-->
+              <label for="contrast-field">Контраст</label> <!--скрыто-->
+            </div>
+            <ul class="effects__list">
+              <li class="effects__range">
+                <span class="effects__range-scale"></span>
+                <span class="effects__range-toggle"></span>
+              </li>
+              <li class="effects__range  effects__range--hidden">  <!--в мобильной версии скрыто-->
+                <span class="effects__range-scale"></span>
+                <span class="effects__range-toggle"></span>
+              </li>
+              <li class="effects__range  effects__range--hidden"> <!--в мобильной версии скрыто-->
+                <span class="effects__range-scale"></span>
+                <span class="effects__range-toggle"></span>
+              </li>
+            </ul>
+          </div>
+          <button class="btn" type="submit">Запостить</button>
+          <button class="btn" type="reset">Отмена</button>
+        </form>
       </section>
     </main>
   </body>
