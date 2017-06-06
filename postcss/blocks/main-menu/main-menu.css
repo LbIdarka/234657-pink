@@ -1,0 +1,26 @@
+.main-menu {
+  outline: $outline-block; /*for grids*/
+  margin: 0;
+  padding: 0;
+  color: $header-color;
+  background: $bg-color;
+}
+
+.main-menu__wrapper {
+  @mixin container;
+}
+
+.main-menu__list {
+  outline: $outline-block-wrapper; /*for grids*/
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-menu__item a {
+  display: block;
+  @mixin font-style 18px 32px 700;
+  color: $header-color;
+  text-align: center;
+  text-decoration: none;
+}

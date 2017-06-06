@@ -3,3 +3,8 @@
   line-height: $line-height;
   font-weight: $font-weight;
 }
+
+@define-mixin container $width: 280px, $margin: 0 auto {
+  width: $width;
+  margin: $margin;
+}

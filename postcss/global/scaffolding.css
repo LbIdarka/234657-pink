@@ -1,0 +1,12 @@
+body {
+  min-width: 320px;
+  margin: 0 auto;
+  font-family: "Open Sans", "Arial", sans-serif;
+  @mixin font-style;
+  background: $body-bg;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

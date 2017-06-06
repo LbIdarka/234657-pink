@@ -1,0 +1,10 @@
+.page-header {
+  outline: $outline-grid; /*for grids*/
+  padding-bottom: 396px;
+  background-color: $bg-color;
+  background-image: url(../img/iphone-hand-mobile@1x.png),
+  url(../img/bg-back-mobile@1x.jpg);
+  background-position: 0 100%,
+                       50% 100%;
+  background-repeat: no-repeat;
+}

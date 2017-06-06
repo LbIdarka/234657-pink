@@ -8,25 +8,29 @@
   <body>
     <header class="page-header">
       <nav class="main-menu  main-menu--nojs">
-        <div class="logo">
-          <img src="http://placehold.it/75x22" width="75" height="22" alt="Pink">
-          <button class="main-menu__toggle" type="button">Открыть</button> <!--скрыт текст-->
+        <div class="main-menu__wrapper">
+          <div class="logo">
+            <img src="/img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink">
+            <button class="main-menu__toggle" type="button">Открыть</button> <!--скрыт текст-->
+          </div>
+          <ul class="main-menu__list">
+            <li class="main-menu__item">
+              <a>Главная</a>
+            </li>
+            <li class="main-menu__item">
+              <a href="foto.html">Фотографии</a>
+            </li>
+            <li class="main-menu__item">
+              <a href="form.html">Конкурс</a>
+            </li>
+            <li class="main-menu__item">
+              <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            </li>
+          </ul>
         </div>
-        <ul class="main-menu__list">
-          <li class="main-menu__item">
-            <a>Главная</a>
-          </li>
-          <li class="main-menu__item">
-            <a href="foto.html">Фотографии</a>
-          </li>
-          <li class="main-menu__item">
-            <a href="form.html">Конкурс</a>
-          </li>
-          <li class="main-menu__item">
-            <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          </li>
-        </ul>
       </nav>
+    </header>
+    <main>
       <section class="download">
         <div class="download__wrapper">
           <h2 class="download__title  download__title--hidden">Скачать приложение из маркета</h2> <!--скрыто-->
@@ -37,8 +41,6 @@
           <p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
         </div>
       </section>
-    </header>
-    <main>
       <section class="features">
         <header class="features__slogan">
           <h2 class="features__title">Наши преимущества</h2> <!--скрыто-->
