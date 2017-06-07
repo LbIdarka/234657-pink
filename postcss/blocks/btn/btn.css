@@ -22,4 +22,15 @@
     color: color($bg-color a(10%));
     border-color: color($bg-color a(10%));
   }
+
+  &--form {
+    margin: auto;
+    padding: 20px;
+    line-height: 1.6;
+    color: $header-color;
+    text-transform: uppercase;
+    background: #2aab6d;
+    border-color: currentColor;
+    border-radius: 5px;
+  }
 }

@@ -32,84 +32,83 @@
       </nav>
     </header>
     <main>
-      <p class="conditions">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span>Пожалуйста, заполните форму ниже:</span></p> <!--span скрыт в мобильной версии-->
+      <header class="lead">
+        <h2 class="lead__title  lead__title--hidden">Конкурсная форма</h2> <!--скрыто-->
+        <p class="lead__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span>Пожалуйста, заполните форму ниже:</span></p> <!--span скрыт в мобильной версии-->
+      </header>
       <form action="https://echo.htmlacademy.ru/" method="get" class="page-form">
-        <h2 class="page-form__title">Конкурсная форма</h2> <!--скрыто-->
-        <fieldset class="page-form__introduce  info-users">
-          <legend>Представьтесь, пожалуйста</legend> <!--скрыто-->
-          <label for="name-field">Фамилия:
-            <input type="text" name="name" id="name-field" placeholder="Укажите фамилию *">
-          </label>
-          <label for="sername-field">Имя:
-            <input type="text" name="sername" id="sername-field" placeholder="Введите ваше имя *">
-          </label>
-          <label for="middle-name-field">Отчество:
-            <input type="text" name="middle-name" id="middle-name-field" placeholder="Ну и отчество тоже">
-          </label>
+        <fieldset class="page-form__info-users">
+          <legend class="page-form__title  page-form__title--hidden">Представьтесь, пожалуйста</legend> <!--скрыто-->
+          <label for="name-field">Фамилия:</label>
+          <input type="text" name="name" id="name-field" placeholder="Укажите фамилию *">
+          <label for="sername-field">Имя:</label>
+          <input type="text" name="sername" id="sername-field" placeholder="Введите ваше имя *">
+          <label for="middle-name-field">Отчество:</label>
+          <input type="text" name="middle-name" id="middle-name-field" placeholder="Ну и отчество тоже">
         </fieldset>
-        <div class="page-form__wrapper">
-          <fieldset class="page-form__check  choice">
-            <legend>Ваши безбашенные достижения в путешествии</legend>
-            <ul class="page-form__check-list">
-              <li class="page-form__check-item">
+        <div class="page-form__wrapper  page-form__wrapper--bg">
+          <fieldset class="page-form__choice">
+            <legend>Ваши безбашенные<br> достижения в путешествии</legend>
+            <ul class="page-form__choice-list">
+              <li class="page-form__choice-item">
                 <input type="checkbox" name="shark" id="shark-field" checked>
                 <label for="shark-field">Сделал селфи с акулой</label>
               </li>
-              <li class="page-form__check-item">
+              <li class="page-form__choice-item">
                 <input type="checkbox" name="beach" id="beach-field" checked>
                 <label for="beach-field">Обгорел на пляже</label>
               </li>
-              <li class="page-form__check-item">
+              <li class="page-form__choice-item">
                 <input type="checkbox" name="star" id="star-field">
                 <label for="star-field">Видел Чака Норриса</label>
               </li>
-              <li class="page-form__check-item">
+              <li class="page-form__choice-item">
                 <input type="checkbox" name="souvenir" id="souvenir-field">
                 <label for="souvenir-field">Накупил сувениров</label>
               </li>
-              <li class="page-form__check-item">
+              <li class="page-form__choice-item">
                 <input type="checkbox" name="tower" id="tower-field" checked>
                 <label for="tower-field">Удержал башню</label>
               </li>
-              <li class="page-form__check-item">
+              <li class="page-form__choice-item">
                 <input type="checkbox" name="hotel" id="hotel-field">
                 <label for="hotel-field">Разгромил отель</label>
               </li>
             </ul>
           </fieldset>
         </div>
-        <fieldset class="page-form__contacts  info-users">
-          <legend>Ваши контактные данные</legend> <!--скрыто-->
-          <label for="phone-field">Номер телефона
-            <input type="tel" name="phone" id="phone-field" placeholder="Номер, пожалуйста">
-          </label>
-          <label for="email-field">Адресок почты
-            <input type="email" name="email" id="email-field" placeholder="Введите почту *">
-          </label>
+        <fieldset class="page-form__info-users">
+          <legend  class="page-form__title  page-form__title--hidden">Ваши контактные данные</legend> <!--скрыто-->
+          <label for="phone-field">Номер телефона</label>
+          <input type="tel" name="phone" id="phone-field" placeholder="Номер, пожалуйста">
+          <label for="email-field">Адресок почты</label>
+          <input type="email" name="email" id="email-field" placeholder="Введите почту *">
         </fieldset>
-        <div class="page-form__wrapper">
-          <fieldset class="page-form__radio  choice">
+        <div class="page-form__wrapper  page-form__wrapper--bg">
+          <fieldset class="page-form__choice">
             <legend>С каким приложением путешествовали?</legend>
-            <ul class="page-form__radio-list">
-              <li class="page-form__radio-item">
+            <ul class="page-form__choice-list">
+              <li class="page-form__choice-item">
                 <input type="radio" name="app" id="ios" checked>
                 <label for="ios">Pink для iOS</label>
               </li>
-              <li class="page-form__radio-item">
+              <li class="page-form__choice-item">
                 <input type="radio" name="app" id="android">
                 <label for="android">Pink на Android</label>
               </li>
-              <li class="page-form__radio-item">
+              <li class="page-form__choice-item">
                 <input type="radio" name="app" id="win">
                 <label for="win">Windows Phone</label>
               </li>
             </ul>
           </fieldset>
         </div>
-        <fieldset class="page-form__text  info-users">
-          <legend>Опишите свои эмоции</legend>
-          <textarea name="emotions" id="emotions-field" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-        </fieldset>
+        <div class="page-form__wrapper">
+          <fieldset class="page-form__text">
+            <legend>Опишите свои эмоции</legend>
+            <textarea name="emotions" id="emotions-field" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          </fieldset>
+        </div>
         <button class="btn btn--form" type="submit">Отправить форму</button>
         <p class="page-form__note"><sup>*</sup> — обязательные поля</p>
       </form>
