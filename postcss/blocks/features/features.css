@@ -1,0 +1,66 @@
+.features {
+  min-height: 1003px;/*for grids*/
+  outline: $outline-grid; /*for grids*/
+}
+
+.features__slogan {
+  min-height: 220px;/*for grids*/
+  outline: $outline-block; /*for grids*/
+  @mixin container;
+  padding: 45px 0 33px;
+  @mixin font-style 24px, 120%, 300;
+  box-sizing: border-box;
+}
+
+.features__title {
+  @mixin visually-hidden;
+}
+
+.features__text {
+  margin: 0;
+  font-style: inherit;
+  text-align: center;
+
+  &--indent {
+    margin-top: 40px;
+  }
+}
+
+.features__inner {
+  padding-top: 85px;
+  background-color: $insert-bg;
+  background-image: url(/img/iphone-screen-mobile@1x.png);
+  background-repeat: no-repeat;
+  background-position: 50% 109%;
+}
+
+.features__list {
+  min-height: 785px;/*for grids*/
+  outline: $outline-block; /*for grids*/
+  @mixin container;
+  padding: 0;
+  list-style: none;
+}
+
+.features__item {
+  margin-bottom: 40px;
+  outline: $outline-item; /*for grids*/
+  font-style: inherit;
+  color: inherit;
+  text-align: center;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.features__item-subtitle {
+  margin: 0;
+  margin-bottom: 20px;
+  @mixin font-style 18px, 1.3, 700;
+  color: #000000;
+}
+
+.features__item-desc {
+  margin: 0;
+}

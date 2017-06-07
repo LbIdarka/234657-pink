@@ -11,6 +11,7 @@
 }
 
 .main-menu__list {
+  min-height: 255px; /*for grids*/
   outline: $outline-block-wrapper; /*for grids*/
   margin: 0;
   padding: 0;
@@ -19,7 +20,7 @@
 
 .main-menu__item a {
   display: block;
-  @mixin font-style 18px 32px 700;
+  @mixin font-style 18px, 32px, 700;
   color: $header-color;
   text-align: center;
   text-decoration: none;

@@ -11,7 +11,7 @@ $input-border: 2px solid #e5e5e5;
 
 
 
-$outline-grid: 3px solid red;
-$outline-block: 3px solid green;
-$outline-item: 3px solid yellow;
-$outline-block-wrapper: 2px dashed darkorange;
+$outline-grid: 3px solid red; /*for grids*/
+$outline-block: 3px solid green; /*for grids*/
+$outline-item: 3px solid yellow; /*for grids*/
+$outline-block-wrapper: 2px dashed darkorange; /*for grids*/

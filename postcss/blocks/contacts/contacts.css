@@ -1,0 +1,55 @@
+.contacts {
+  min-height: 413px; /*for grids*/
+  outline: $outline-block; /*for grids*/
+  padding: 45px 0 40px;
+}
+
+.contacts__wrapper {
+  @mixin container;
+}
+
+.contacts__title--hidden {
+  @mixin visually-hidden;
+}
+
+.contacts__subtitle {
+  margin: 0;
+  @mixin font-style 24px, 120%, 300;
+  text-align: center;
+}
+
+.contacts__list {
+  margin: 0;
+  margin-top: 40px;
+  padding: 0;
+  list-style: none;
+}
+
+.contacts__item {
+  outline: $outline-item; /*for grids*/
+  margin-bottom: 25px;
+  text-align: center;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.contacts__item-title {
+  margin: 0;
+  @mixin font-style 18px, 120%, 700;
+  color: inherit;
+  text-align: center;
+}
+
+.contacts__item a{
+  display: block;
+  text-decoration: none;
+}
+
+.contacts__info {
+  margin: 0;
+  @mixin font-style 24px, 120%, 300;
+  color: $highlight-color;
+  text-align: center;
+}

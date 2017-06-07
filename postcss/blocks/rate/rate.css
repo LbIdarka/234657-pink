@@ -1,0 +1,62 @@
+.rate {
+  min-height: 470px; /*for grids*/
+  outline: $outline-block; /*for grids*/
+  background-color: $insert-bg;
+}
+
+.rate__title--hidden {
+  @mixin visually-hidden;
+}
+
+.rate__slider-wrapper {
+  padding-top: 90px;
+}
+
+.rate__items {
+  background: $body-bg;
+  border-collapse: collapse;
+}
+
+.rate__items thead {
+  background: $bg-color;
+  color: $header-color;
+}
+
+.rate__items-row {
+  font-style: inherit;
+  line-height: 2.14;
+  text-transform: uppercase;
+  border-bottom: 2px solid #e5e5e5;
+
+  &--no-border {
+    border: none;
+  }
+}
+
+.rate__items-row-title {
+  @mixin font-style 18px, 2.1, 700;
+  text-align: center;
+  text-transform: uppercase;
+  border-right: 2px solid #e5e5e5;
+
+  &:first-child {
+    display: none;
+  }
+}
+
+.rate__items-row-title--hidden {
+  @mixin visually-hidden;
+}
+
+.rate__items-row-title span {
+  @mixin font-style 24px, 1.25, 300;
+}
+
+.rate__items-features:first-child {
+  display: none;
+}
+
+.rate__items-option {
+  border-right: 2px solid #e5e5e5;
+}
+

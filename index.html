@@ -35,9 +35,17 @@
         <div class="download__wrapper">
           <h2 class="download__title  download__title--hidden">Скачать приложение из маркета</h2> <!--скрыто-->
           <a href="https://www.apple.com/ru/itunes/" class="btn  btn--white">Скачать приложение</a>
-          <a href="https://www.apple.com/ru/itunes/" class="download__link">Itunes</a>
-          <a href="https://play.google.com/store" class="download__link">Google play</a>
-          <a href="https://www.microsoft.com/ru-ru/store/b/home" class="download__link">Microsoft store</a>
+          <ul class="download__list">
+            <li class="download__item">
+              <a href="https://www.apple.com/ru/itunes/" class="download__link  download__link--itunes">Itunes</a>
+            </li>
+            <li class="download__item">
+              <a href="https://play.google.com/store" class="download__link  download__link--android">Google play</a>
+            </li>
+            <li class="download__item">
+              <a href="https://www.microsoft.com/ru-ru/store/b/home" class="download__link  download__link--win">Microsoft store</a>
+            </li>
+          </ul>
           <p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
         </div>
       </section>
@@ -45,25 +53,27 @@
         <header class="features__slogan">
           <h2 class="features__title">Наши преимущества</h2> <!--скрыто-->
           <p class="features__text">Устали от серости мегаполиса?</p>
-          <p class="features__text">Нам есть, что вам  предложить!</p>
+          <p class="features__text  features__text--indent">Нам есть, что вам  предложить!</p>
         </header>
-        <ul class="features__list">
-          <li class="features__item">
-            <h3 class="features__item-subtitle">Поднимает настроение</h3>
-            <p class="features__item-desc">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-          </li>
-          <li class="features__item">
-            <h3 class="features__item-subtitle">Меняет мир вокруг</h3>
-            <p class="features__item-desc">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-          </li>
-          <li class="features__item">
-            <h3 class="features__item-subtitle">Заводит новых друзей</h3>
-            <p class="features__item-desc">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
-          </li>
-        </ul>
+        <div class="features__inner">
+          <ul class="features__list">
+            <li class="features__item">
+              <h3 class="features__item-subtitle">Поднимает настроение</h3>
+              <p class="features__item-desc">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            </li>
+            <li class="features__item">
+              <h3 class="features__item-subtitle">Меняет мир вокруг</h3>
+              <p class="features__item-desc">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            </li>
+            <li class="features__item">
+              <h3 class="features__item-subtitle">Заводит новых друзей</h3>
+              <p class="features__item-desc">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+            </li>
+          </ul>
+        </div>
       </section>
       <section class="reviews">
-        <h2 class="reviews__title">Отзывы о приложении</h2> <!--скрыто-->
+        <h2 class="reviews__title  reviews__title--hidden">Отзывы о приложении</h2> <!--скрыто-->
         <div class="reviews__slider-wrapper  slider">
           <input type="radio" id="btn-1" name="toggle">
           <input type="radio" id="btn-2" name="toggle" checked>
@@ -78,19 +88,19 @@
               <cite class="reviews__author-name">Николай Петров</cite>
               <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </blockquote>
-            <blockquote class="reviews__item  slider__item">
+            <!--<blockquote class="reviews__item  slider__item">
               <cite class="reviews__author-name">Николай Петров</cite>
               <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </blockquote>
             <blockquote class="reviews__item  slider__item">
               <cite class="reviews__author-name">Николай Петров</cite>
               <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-            </blockquote>
+            </blockquote>-->
           </div>
         </div>
       </section>
       <section class="rate">
-        <h2 class="rate__title">Тарифы</h2> <!--скрыто-->
+        <h2 class="rate__title  rate__title--hidden">Тарифы</h2> <!--скрыто-->
         <div class="rate__slider-wrapper  slider">
           <input type="radio" id="base" name="toggle-rate">
           <input type="radio" id="standart" name="toggle-rate" checked>
@@ -103,16 +113,11 @@
           <div class="rate__list  slider__inner">
             <table class="rate__items  slider__item">
               <thead>
-                <tr class="rate__items-row">
-                  <th class="rate__items-row-title" rowspan="2">Название</th> <!-- скрыт текст, а в мобильной версии вся ячейка -->
-                  <th class="rate__items-row-title" colspan="2">База</th>
-                  <th class="rate__items-row-title" colspan="2">Стандарт</th>
-                  <th class="rate__items-row-title" colspan="2">Анлим</th>
-                </tr>
-                <tr>
-                  <th class="rate__items-row-price" colspan="2">1,99 USD</th>
-                  <th class="rate__items-row-price" colspan="2">3,99 USD</th>
-                  <th class="rate__items-row-price" colspan="2">9,99 USD</th>
+                <tr class="rate__items-row  rate__items-row--no-border">
+                  <th class="rate__items-row-title  rate__items-row-title--hidden">Название</th> <!-- скрыт текст, а в мобильной версии вся ячейка -->
+                  <th class="rate__items-row-title" colspan="2">База<span>1,99 USD</span></th>
+                  <th class="rate__items-row-title" colspan="2">Стандарт<span>3,99 USD</span></th>
+                  <th class="rate__items-row-title" colspan="2">Анлим<span>9,99 USD</span></th>
                 </tr>
               </thead>
               <tr class="rate__items-row">
@@ -148,7 +153,7 @@
       </section>
       <section class="contacts">
         <div class="contacts__wrapper">
-          <h2 class="contacts__title">Контакты</h2> <!--скрыто-->
+          <h2 class="contacts__title  contacts__title--hidden">Контакты</h2> <!--скрыто-->
           <p class="contacts__subtitle">Остались вопросы? Свяжитесь с нами!</p>
           <ul class="contacts__list">
             <li class="contacts__item">
@@ -167,7 +172,7 @@
         </div>
       </section>
       <div class="map">
-        <h2 class="map__title">Карта</h2> <!--скрыто-->
+        <h2 class="map__title  map__title--hidden">Карта</h2> <!--скрыто-->
       </div>
     </main>
   </body>
