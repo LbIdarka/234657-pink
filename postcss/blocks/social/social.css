@@ -1,0 +1,10 @@
+.social {
+  min-height: 50px;/*for grids*/
+  outline: $outline-block; /*for grids*/
+  margin-top: 40px;
+  text-align: center;
+}
+
+.social__title--hidden {
+  @mixin visually-hidden;
+}

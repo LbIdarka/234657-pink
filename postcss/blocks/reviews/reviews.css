@@ -1,0 +1,26 @@
+.reviews {
+  min-height: 353px; /*for grids*/
+  outline: $outline-block; /*for grids*/
+  padding: 43px 0;
+}
+
+.reviews__title--hidden {
+  @mixin visually-hidden;
+}
+
+.reviews__item {
+  outline: $outline-item; /*for grids*/
+  text-align:center;
+}
+
+.reviews__author-name {
+  @mixin font-style 18px, 2.1, 700;
+  font-style: normal;
+  color: #000000;
+}
+
+.reviews__text {
+  font-style: inherit;
+  line-height: 2.1;
+  color: inherit;
+}

@@ -1,0 +1,43 @@
+.effects__form {
+  min-height: 757px; /*for grids*/
+  outline: $outline-block; /*for grids*/
+  background: $insert-bg;
+}
+
+.effects__form-wrapper {
+  outline: $outline-block-wrapper; /*for grids*/
+  border-bottom: 1px solid color($bg-color a(10%));
+}
+
+.effects__img {
+  outline: $outline-item; /*for grids*/
+  padding: 20px 0 40px;
+}
+
+.effects__form-inner {
+  outline: $outline-block-wrapper; /*for grids*/
+  @mixin container;
+}
+
+.effects__img img {
+  display: block;
+}
+
+.effects__list {
+  outline: $outline-item; /*for grids*/
+  margin: 0;
+  margin-top: 40px;
+  padding: 0;
+  list-style: none;
+}
+
+.effects__range--hidden {
+  display: none;
+}
+
+.effects__form-btn {
+  outline: $outline-item; /*for grids*/
+  @mixin container;
+  padding: 40px 0;
+  box-sizing: border-box;
+}

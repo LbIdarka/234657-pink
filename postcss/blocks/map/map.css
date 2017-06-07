@@ -1,0 +1,12 @@
+.map {
+  min-height: 202px; /*for grids*/
+  outline: $outline-block; /*for grids*/
+  background-color: $insert-bg;
+  background-image: url(/img/bg-map-mobile@1x.png);
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+}
+
+.map__title--hidden {
+  @mixin visually-hidden;
+}

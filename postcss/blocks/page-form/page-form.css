@@ -1,0 +1,113 @@
+.page-form {
+outline: $outline-grid; /*for grids*/
+}
+
+.page-form fieldset {
+  @mixin container;
+  padding: 0;
+  border: none;
+}
+
+.page-form legend {
+  margin-bottom: 40px;
+  @mixin font-style;
+  line-height: 1.3;
+  color: $highlight-color;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.page-form__title--hidden {
+  @mixin visually-hidden;
+}
+
+.page-form__info-users {
+  outline: $outline-item; /*for grids*/
+  padding-bottom: 40px;
+}
+
+.page-form__info-users label {
+  display: block;
+  margin: 25px 0 10px;
+  padding-left: 22px;
+  @mixin font-style;
+  line-height: 2.1;
+  color: $highlight-color;
+  text-transform: uppercase;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.page-form__info-users input {
+  width: 100%;
+  padding: 20px;
+  border: $input-border;
+  box-sizing: border-box;
+
+  &::placeholder {
+    @mixin font-style 18px, 1.7, 400;
+    color: $bg-color;
+  }
+}
+
+.page-form__wrapper {
+  padding: 40px 0;
+  box-sizing: border-box;
+
+  &--bg {
+    background: $insert-bg;
+  }
+}
+
+.page-form__choice-list {
+  outline: $outline-item; /*for grids*/
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.page-form__choice-item {
+  margin-bottom: 45px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.page-form__choice-item label {
+  padding-left: 70px;
+  @mixin font-style 18px, 1.7, 400;
+}
+
+.page-form__text {
+  outline: $outline-item; /*for grids*/
+}
+
+.page-form__text textarea {
+  width: 100%;
+  min-height: 195px;
+  padding: 20px;
+  border: $input-border;
+  box-sizing: border-box;
+
+  &::placeholder {
+    @mixin font-style 18px, 1.7, 400;
+    color: $bg-color;
+  }
+}
+
+.page-form__note {
+  margin: 0;
+  margin-top: 40px;
+  @mixin font-style;
+  line-height: 2.1;
+  color: inherit;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.page-form__note sup {
+  color: $highlight-color;
+}

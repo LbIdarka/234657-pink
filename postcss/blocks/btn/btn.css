@@ -1,0 +1,36 @@
+.btn {
+  display: block;
+  width: 280px;
+  padding: 15px;
+  @mixin font-style 18px, 1, 700;
+  color: $highlight-color;
+  text-align: center;
+  background: transparent;
+  border: 3px solid $highlight-color;
+  border-radius: 20px;
+  box-sizing: border-box;
+
+  &--white {
+    outline: $outline-item; /*for grids*/
+    color: $header-color;
+    text-decoration: none;
+    border-color: $header-color;
+  }
+
+  &--opacity {
+    margin-top: 10px;
+    color: color($bg-color a(10%));
+    border-color: color($bg-color a(10%));
+  }
+
+  &--form {
+    margin: auto;
+    padding: 20px;
+    line-height: 1.6;
+    color: $header-color;
+    text-transform: uppercase;
+    background: #2aab6d;
+    border-color: currentColor;
+    border-radius: 5px;
+  }
+}

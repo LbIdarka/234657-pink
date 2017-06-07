@@ -1,0 +1,9 @@
+.logo {
+  min-height: 70px; /*for grids*/
+  outline: $outline-block-wrapper; /*for grids*/
+}
+
+.logo--footer {
+  min-height: 40px; /*for grids*/
+  text-align: center;
+}

@@ -1,0 +1,30 @@
+.download {
+  min-height: 255px; /*for grids*/
+  outline: $outline-grid; /*for grids*/
+  padding: 30px 0;
+  font-weight: 300;
+  color: $header-color;
+  background-color: #1d2631;
+  box-sizing: border-box;
+}
+
+.download__wrapper {
+  @mixin container;
+}
+
+.download__title--hidden {
+  @mixin visually-hidden;
+}
+
+.download__list {
+  min-height: 60px; /*for grids*/
+  outline: $outline-item; /*for grids*/
+  display: block;
+  margin-top: 27px;
+  list-style: none;
+}
+
+.download__text {
+  outline: $outline-item; /*for grids*/
+  margin: 25px 0 0;
+}

@@ -1,0 +1,6 @@
+.like__label {
+  margin-left: 20px;
+  font-size: 12px;
+  color: $highlight-color;
+  text-transform: uppercase;
+}

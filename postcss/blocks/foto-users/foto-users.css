@@ -1,0 +1,56 @@
+.foto-users__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.foto-users__item {
+  outline: $outline-item; /*for grids*/
+  @mixin container;
+  margin-bottom: 20px;
+  @mixin font-style;
+  line-height: 1.7;
+  color: inherit;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &--fullscreen {
+    width: 100%;
+  }
+}
+
+.foto-users__img img {
+  display: block;
+}
+
+.foto-users__descr {
+  margin: 0;
+  padding: 20px 22px 25px 17px;
+  font: inherit;
+  color: inherit;
+  background: $insert-bg;
+  box-sizing: border-box;
+
+  &--wrapper {
+    @mixin container;
+  }
+}
+
+.foto-users__author-name {
+  font-weight: 700;
+  font-style: normal;
+}
+
+.foto-users__descr-time {
+  font-weight: 300;
+}
+
+.foto-users__text {
+  margin: 0;
+}
+
+.foto-users__like {
+  margin-top: 15px;
+}

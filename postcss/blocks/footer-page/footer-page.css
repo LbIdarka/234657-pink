@@ -1,0 +1,11 @@
+.footer-page--index {
+  display: none;
+}
+
+.footer-page {
+  min-height: 284px;/*for grids*/
+  outline: $outline-grid; /*for grids*/
+  @mixin container;
+  padding: 40px 0;
+  box-sizing: border-box;
+}
