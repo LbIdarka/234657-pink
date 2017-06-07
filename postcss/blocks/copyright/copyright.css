@@ -1,0 +1,17 @@
+.copyright {
+  min-height: 40px;/*for grids*/
+  outline: $outline-block; /*for grids*/
+  margin-top: 40px;
+  text-align: center;
+}
+
+.copyright__text {
+  font-style: inherit;
+  line-height: 1.28;
+  font-weight: normal;
+  color: inherit;
+}
+
+.copyright__title {
+  @mixin visually-hidden;
+}

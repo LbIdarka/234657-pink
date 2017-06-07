@@ -9,22 +9,22 @@
 @import "blocks/btn/btn.css";
  /*@import "blocks/choice/coice.css";*/
  /*@import "blocks/conditions/conditions.css";*/
- @import "blocks/contacts/contacts.css";
- /*@import "blocks/copyright/copyright.css";*/
- @import "blocks/download/download.css";
- /*@import "blocks/effects/effects.css";*/
- @import "blocks/features/features.css";
- /*@import "blocks/footer-page/footer-page.css";*/
- /*@import "blocks/foto-users/foto-users.css";*/
+@import "blocks/contacts/contacts.css";
+@import "blocks/copyright/copyright.css";
+@import "blocks/download/download.css";
+@import "blocks/effects/effects.css";
+@import "blocks/features/features.css";
+@import "blocks/footer-page/footer-page.css";
+@import "blocks/foto-users/foto-users.css";
  /*@import "blocks/info-users/info-users.css";*/
- /*@import "blocks/lead/lead.css";*/
- /*@import "blocks/like/like.css";*/
+@import "blocks/lead/lead.css";
+@import "blocks/like/like.css";
 @import "blocks/logo/logo.css";
 @import "blocks/main-menu/main-menu.css";
 @import "blocks/map/map.css";
  /*@import "blocks/page-form/page-form.css";*/
 @import "blocks/page-header/page-header.css";
- @import "blocks/rate/rate.css";
- @import "blocks/reviews/reviews.css";
+@import "blocks/rate/rate.css";
+@import "blocks/reviews/reviews.css";
  /*@import "blocks/slider/slider.css";*/
- /*@import "blocks/social/social.css";*/
+@import "blocks/social/social.css";
