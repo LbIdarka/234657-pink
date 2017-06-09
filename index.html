@@ -57,11 +57,8 @@
 
     <main  class="page-main">
 
-      <div class="page-title">
+      <div class="page-title  page-title--iphone">
         <h1 class="page-title__caption  page-title__caption--hidden">Приложение Pink</h1>
-        <div class="page-title__img">
-          <img src="../img/iphone-hand-mobile@1x.png" width="258" height="308" alt="приложение в действии">
-        </div>
         <section class="download">
           <div class="download__wrapper">
             <h2 class="download__title  download__title--hidden">Скачать приложение из маркета</h2> <!--скрыто-->
@@ -87,23 +84,34 @@
         <header class="features__slogan">
           <h2 class="features__title">Наши преимущества</h2> <!--скрыто-->
           <p class="features__text">Устали от серости мегаполиса?</p>
-          <p class="features__text  features__text--indent">Нам есть, что вам  предложить!</p>
+          <p class="features__text  features__text--indent">Нам есть, что вам<br> предложить!</p>
         </header>
-        <div class="features__inner">
-          <ul class="features__list">
-            <li class="features__item">
-              <h3 class="features__item-subtitle">Поднимает настроение</h3>
-              <p class="features__item-desc">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-            </li>
-            <li class="features__item">
-              <h3 class="features__item-subtitle">Меняет мир вокруг</h3>
-              <p class="features__item-desc">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-            </li>
-            <li class="features__item">
-              <h3 class="features__item-subtitle">Заводит новых друзей</h3>
-              <p class="features__item-desc">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
-            </li>
-          </ul>
+        <div class="features__wrapper">
+          <div class="features__inner">
+            <ul class="features__list">
+              <li class="features__item">
+                <h3 class="features__item-subtitle">Поднимает настроение</h3>
+                <p class="features__item-desc">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+              </li>
+              <li class="features__item">
+                <h3 class="features__item-subtitle">Меняет мир вокруг</h3>
+                <p class="features__item-desc">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы<br> усилить эффект</p>
+              </li>
+              <li class="features__item">
+                <h3 class="features__item-subtitle">Заводит новых друзей</h3>
+                <p class="features__item-desc">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="research"> <!-- скрываем в мобильной версии -->
+        <div class="research__wrapper">
+          <h2 class="research__title  research__title--hidden">Исследование влияния Pink на настроение</h2> <!--скрыто-->
+          <span class="research__subtitle">Эффект на 24 часа!</span>
+          <p class="research__desc">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+          <a href="#" class="research__link">Узнать больше об исследовании</a>
         </div>
       </section>
 
@@ -120,7 +128,7 @@
           </div>
           <div class="reviews__list  slider__inner">
             <blockquote class="reviews__item  slider__item">
-              <cite class="reviews__author-name">Николай Петров</cite>
+              <cite class="reviews__author-name">Николай Петров<span>25 лет, водитель трамвая</span></cite>
               <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </blockquote>
             <!--<blockquote class="reviews__item  slider__item">
@@ -191,7 +199,7 @@
       <section class="contacts">
         <div class="contacts__wrapper">
           <h2 class="contacts__title  contacts__title--hidden">Контакты</h2> <!--скрыто-->
-          <p class="contacts__subtitle">Остались вопросы? Свяжитесь с нами!</p>
+          <p class="contacts__subtitle">Остались вопросы?<br> Свяжитесь с нами!</p>
           <ul class="contacts__list">
             <li class="contacts__item">
               <b class="contacts__item-title">Звоните:</b>

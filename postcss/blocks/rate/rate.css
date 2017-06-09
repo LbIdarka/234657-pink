@@ -12,20 +12,19 @@
   padding-top: 90px;
 }
 
-.rate__items {
-  background: $body-bg;
-  border-collapse: collapse;
+.rate__list {
+  overflow: hidden;
 }
 
-.rate__items thead {
-  background: $bg-color;
-  color: $header-color;
+.rate__items {
+  border-collapse: collapse;
 }
 
 .rate__items-row {
   font-style: inherit;
   line-height: 2.14;
   text-transform: uppercase;
+  background: $body-bg;
   border-bottom: 2px solid #e5e5e5;
 
   &--no-border {
@@ -34,9 +33,12 @@
 }
 
 .rate__items-row-title {
+  padding: 20px 90px;
   @mixin font-style 18px, 2.1, 700;
+  color: $header-color;
   text-align: center;
   text-transform: uppercase;
+  background: $bg-color;
   border-right: 2px solid #e5e5e5;
 
   &:first-child {
@@ -49,6 +51,8 @@
 }
 
 .rate__items-row-title span {
+  display: block;
+  width: 100px;
   @mixin font-style 24px, 1.25, 300;
 }
 
@@ -58,4 +62,78 @@
 
 .rate__items-option {
   border-right: 2px solid #e5e5e5;
+}
+
+@media ($tablet-widths) {
+
+  .rate__list {
+    @mixin container;
+  }
+
+  .rate__items-row--no-border {
+    background: transparent;
+    border-bottom: 2px solid #e5e5e5;
+  }
+
+  .rate__items-row-title {
+    padding: 20px 30px 10px;
+    font-size: 16px;
+    line-height: 1.9;
+
+    &:first-child {
+      display: block;
+      background: $insert-bg;
+    }
+  }
+
+  .rate__items-row-title span {
+    width: 90px;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.7;
+  }
+
+  .rate__items-features {
+    padding: 10px 15px 12px;
+    text-transform: none;
+
+    &:first-of-type {
+      display: block;
+      border-right: 2px solid #e5e5e5;
+      border-left: 2px solid #e5e5e5;
+    }
+
+    &:nth-of-type(n+2) {
+      font-size: 0;
+    }
+  }
+
+  .rate__items-option {
+    padding: 10px 53px;
+  }
+
+}
+
+@media ($desktop-widths) {
+
+  .rate__items {
+    width: 960px;
+  }
+
+  .rate__items-row-title {
+    font-size: 18px;
+    line-height: 1.7;
+  }
+
+  .rate__items-row-title span {
+    width: 100px;
+    font-size: 24px;
+    line-height: 1.25;
+  }
+
+  .rate__items-features {
+    font-size: 18px;
+    line-height: 1.7;
+  }
+
 }

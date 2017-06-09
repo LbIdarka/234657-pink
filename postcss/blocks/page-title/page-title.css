@@ -1,10 +1,19 @@
 .page-title {
   outline: $outline-grid; /*for grids*/
+  padding-top: 395px;
   color: $header-color;
   background-color: $bg-color;
   background-image: url(../img/bg-back-mobile@1x.jpg);
   background-position: 50% -25%;
   background-repeat: no-repeat;
+
+  &--iphone {
+    background-image: url(../img/iphone-hand-mobile@1x.png),
+                      url(../img/bg-back-mobile@1x.jpg);
+    background-position: 0 29%,
+                         50% -25%;
+    background-repeat: no-repeat;
+  }
 
   &--img {
     min-height: 170px;
@@ -26,10 +35,15 @@
 }
 
 
-.page-title__img {
-  padding-top: 110px;
-}
+@media ($tablet-widths) {
 
-.page-title__img img {
-  display: block;
+  .page-title {
+    padding-bottom: 92px;
+    padding-top: 75px;
+
+    &--iphone {
+      background-position: 50% 100%, 50% -25%;
+    }
+  }
+
 }

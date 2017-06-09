@@ -11,7 +11,6 @@
 }
 
 .main-menu__list {
-  min-height: 255px; /*for grids*/
   outline: $outline-block-wrapper; /*for grids*/
   margin: 0;
   padding: 0;
@@ -26,10 +25,26 @@
   text-decoration: none;
 }
 
-@media ($tablet-widths) {
+@media ($desktop-widths) {
 
   .main-menu__wrapper {
-    @mixin container 700px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .main-menu__toggle {
+    display: none;
+  }
+
+  .main-menu__list {
+    display: flex;
+    width: 620px;
+    margin-left: auto;
+    justify-content: space-between;
+  }
+
+  .main-menu__item {
+    max-width: auto;
   }
 
 }

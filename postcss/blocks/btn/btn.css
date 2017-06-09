@@ -34,3 +34,11 @@
     border-radius: 5px;
   }
 }
+
+@media ($desktop-widths) {
+
+  .btn {
+    font-size: 18px;
+  }
+
+}
