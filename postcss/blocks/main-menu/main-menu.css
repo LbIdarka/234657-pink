@@ -25,3 +25,11 @@
   text-align: center;
   text-decoration: none;
 }
+
+@media ($tablet-widths) {
+
+  .main-menu__wrapper {
+    @mixin container 700px;
+  }
+
+}

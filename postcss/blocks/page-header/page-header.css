@@ -1,32 +1,5 @@
 .page-header {
   outline: $outline-grid; /*for grids*/
-  padding-bottom: 173px;
-  color: $header-color;
-  background-color: $bg-color;
-  background-image: url(../img/bg-back-mobile@1x.jpg);
-  background-position: 50% 0;
-  background-repeat: no-repeat;
-
-  &--bg {
-    background-image: url(../img/iphone-hand-mobile@1x.png),
-                      url(../img/bg-back-mobile@1x.jpg);
-    background-position: 0 100%,
-                        50% 100%;
-    background-repeat: no-repeat;
-  }
-
-  &--indent {
-    padding-bottom: 396px;
-  }
-}
-
-.page-header__title {
-  @mixin container;
-  @mixin font-style 24px, 120%, 300;
-  color: $header-color;
-  text-align: center;
-
-  &--hidden {
-    @mixin visually-hidden;
-  }
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.3);
 }

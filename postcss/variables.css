@@ -9,7 +9,8 @@ $header-color-active: color($header-color a(30%)); /* цвет использу�
 $btn-border: 3px solid color($bg-color a(10%));
 $input-border: 2px solid #e5e5e5;
 
-
+$tablet-widths: (min-width: 700px);
+$desktop-widths: (min-width: 1200px);
 
 $outline-grid: 3px solid red; /*for grids*/
 $outline-block: 3px solid green; /*for grids*/

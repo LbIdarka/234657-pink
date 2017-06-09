@@ -1,5 +1,4 @@
 .contacts {
-  min-height: 413px; /*for grids*/
   outline: $outline-block; /*for grids*/
   padding: 45px 0 40px;
 }

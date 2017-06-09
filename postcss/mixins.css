@@ -4,9 +4,10 @@
   font-weight: $font-weight;
 }
 
-@define-mixin container $width: 280px, $margin: 0 auto {
+@define-mixin container $width: 320px, $margin: 0 auto, $padding: 0 20px {
   width: $width;
   margin: $margin;
+  padding: $padding;
 }
 
 @define-mixin visually-hidden {

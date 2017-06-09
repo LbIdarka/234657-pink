@@ -3,39 +3,44 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
 
-      <h1 class="page-header__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
-
       <nav class="main-menu  main-menu--nojs">
-        <div class="logo">
-          <a href="index.html" class="logo__link">
-            <img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink">
-          </a>
-          <button class="main-menu__toggle" type="button">Открыть</button> <!--скрыто-->
+        <div class="main-menu__wrapper">
+          <div class="logo">
+            <a href="index.html" class="logo__link">
+              <img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink">
+            </a>
+            <button class="main-menu__toggle" type="button">Открыть</button> <!--скрыто-->
+          </div>
+          <ul class="main-menu__list">
+            <li class="main-menu__item">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="main-menu__item">
+              <a href="foto.html">Фотографии</a>
+            </li>
+            <li class="main-menu__item">
+              <a>Конкурс</a>
+            </li>
+            <li class="main-menu__item">
+              <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            </li>
+          </ul>
         </div>
-        <ul class="main-menu__list">
-          <li class="main-menu__item">
-            <a href="index.html">Главная</a>
-          </li>
-          <li class="main-menu__item">
-            <a href="foto.html">Фотографии</a>
-          </li>
-          <li class="main-menu__item">
-            <a>Конкурс</a>
-          </li>
-          <li class="main-menu__item">
-            <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          </li>
-        </ul>
       </nav>
 
     </header>
 
-    <main>
+    <main  class="page-main">
+
+      <div class="page-title  page-title--img">
+        <h1 class="page-title__caption">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      </div>
 
       <header class="lead">
         <h2 class="lead__title  lead__title--hidden">Конкурсная форма</h2> <!--скрыто-->
@@ -142,7 +147,7 @@
           <img src="img/logo-htmlacademy.svg" alt="htmlacademy">
         </a>
       </section>
-      
+
     </footer>
   </body>
 </html>

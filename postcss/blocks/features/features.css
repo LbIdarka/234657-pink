@@ -22,12 +22,13 @@
   text-align: center;
 
   &--indent {
-    margin-top: 40px;
+    margin-top: 30px;
   }
 }
 
 .features__inner {
-  padding-top: 85px;
+  padding-top: 82px;
+  padding-bottom: 310px;
   background-color: $insert-bg;
   background-image: url(/img/iphone-screen-mobile@1x.png);
   background-repeat: no-repeat;
@@ -35,7 +36,6 @@
 }
 
 .features__list {
-  min-height: 785px;/*for grids*/
   outline: $outline-block; /*for grids*/
   @mixin container;
   padding: 0;
@@ -43,7 +43,7 @@
 }
 
 .features__item {
-  margin-bottom: 40px;
+  margin-bottom: 22px;
   outline: $outline-item; /*for grids*/
   font-style: inherit;
   color: inherit;
@@ -56,7 +56,7 @@
 
 .features__item-subtitle {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   @mixin font-style 18px, 1.3, 700;
   color: #000000;
 }

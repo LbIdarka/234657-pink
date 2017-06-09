@@ -1,15 +1,19 @@
 .reviews {
-  min-height: 353px; /*for grids*/
   outline: $outline-block; /*for grids*/
-  padding: 43px 0;
+  padding: 10px 0 45px;
 }
 
 .reviews__title--hidden {
   @mixin visually-hidden;
 }
 
+.reviews__list {
+  @mixin container;
+}
+
 .reviews__item {
   outline: $outline-item; /*for grids*/
+  margin: 0;
   text-align:center;
 }
 

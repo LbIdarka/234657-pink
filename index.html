@@ -3,12 +3,32 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
+    <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
+    <script src="../node_modules/pixel-glass/script.js"></script>
+    <style>
+  HTML {
+    background: url('preview/pink-index-mobile.jpg' ) 50% 0 no-repeat;
+  }
+/*
+  @media (min-width: 800px) {
+    HTML {
+      background-image: url('img/page-tablet.jpg' );
+    }
+  }
+
+  @media (min-width: 1200px) {
+    HTML {
+      background-image: url('img/page-desktop.jpg' );
+    }
+  }
+*/
+  }
+</style>
   </head>
   <body>
-    <header class="page-header  page-header--bg  page-header--indent">
-
-      <h1 class="page-header__title  page-header__title--hidden">Приложение Pink</h1>
+    <header class="page-header">
 
       <nav class="main-menu  main-menu--nojs">
         <div class="main-menu__wrapper">
@@ -35,26 +55,33 @@
 
     </header>
 
-    <main>
+    <main  class="page-main">
 
-      <section class="download">
-        <div class="download__wrapper">
-          <h2 class="download__title  download__title--hidden">Скачать приложение из маркета</h2> <!--скрыто-->
-          <a href="https://www.apple.com/ru/itunes/" class="btn  btn--white">Скачать приложение</a>
-          <ul class="download__list">
-            <li class="download__item">
-              <a href="https://www.apple.com/ru/itunes/" class="download__link  download__link--itunes">Itunes</a>
-            </li>
-            <li class="download__item">
-              <a href="https://play.google.com/store" class="download__link  download__link--android">Google play</a>
-            </li>
-            <li class="download__item">
-              <a href="https://www.microsoft.com/ru-ru/store/b/home" class="download__link  download__link--win">Microsoft store</a>
-            </li>
-          </ul>
-          <p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      <div class="page-title">
+        <h1 class="page-title__caption  page-title__caption--hidden">Приложение Pink</h1>
+        <div class="page-title__img">
+          <img src="../img/iphone-hand-mobile@1x.png" width="258" height="308" alt="приложение в действии">
         </div>
-      </section>
+        <section class="download">
+          <div class="download__wrapper">
+            <h2 class="download__title  download__title--hidden">Скачать приложение из маркета</h2> <!--скрыто-->
+            <p class="download__subtitle">Взгляните на жизнь иначе!</p> <!--скрыто в мобильной версии-->
+            <a href="https://www.apple.com/ru/itunes/" class="btn  btn--white">Скачать приложение</a>
+            <ul class="download__list">
+              <li class="download__item">
+                <a href="https://www.apple.com/ru/itunes/" class="download__link  download__link--itunes">Itunes</a>
+              </li>
+              <li class="download__item">
+                <a href="https://play.google.com/store" class="download__link  download__link--android">Google play</a>
+              </li>
+              <li class="download__item">
+                <a href="https://www.microsoft.com/ru-ru/store/b/home" class="download__link  download__link--win">Microsoft store</a>
+              </li>
+            </ul>
+            <p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+          </div>
+        </section>
+      </div>
 
       <section class="features">
         <header class="features__slogan">

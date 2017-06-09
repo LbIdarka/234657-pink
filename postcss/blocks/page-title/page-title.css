@@ -1,0 +1,35 @@
+.page-title {
+  outline: $outline-grid; /*for grids*/
+  color: $header-color;
+  background-color: $bg-color;
+  background-image: url(../img/bg-back-mobile@1x.jpg);
+  background-position: 50% -25%;
+  background-repeat: no-repeat;
+
+  &--img {
+    min-height: 170px;
+    background-position:  50% -70px;
+  }
+}
+
+.page-title__caption {
+  display: block;
+  @mixin container;
+  padding-top: 32px;
+  @mixin font-style 24px, 120%, 300;
+  color: $header-color;
+  text-align: center;
+
+  &--hidden {
+    @mixin visually-hidden;
+  }
+}
+
+
+.page-title__img {
+  padding-top: 110px;
+}
+
+.page-title__img img {
+  display: block;
+}

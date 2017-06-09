@@ -21,6 +21,8 @@
 @import "blocks/map/map.css";
 @import "blocks/page-form/page-form.css";
 @import "blocks/page-header/page-header.css";
+@import "blocks/page-main/page-main.css";
+@import "blocks/page-title/page-title.css";
 @import "blocks/rate/rate.css";
 @import "blocks/reviews/reviews.css";
 /*@import "blocks/slider/slider.css";*/

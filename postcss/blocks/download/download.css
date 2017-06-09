@@ -1,7 +1,7 @@
 .download {
   min-height: 255px; /*for grids*/
   outline: $outline-grid; /*for grids*/
-  padding: 30px 0;
+  padding: 28px 0 18px;
   font-weight: 300;
   color: $header-color;
   background-color: #1d2631;
@@ -16,11 +16,17 @@
   @mixin visually-hidden;
 }
 
+.download__subtitle {
+  display: none;
+}
+
 .download__list {
-  min-height: 60px; /*for grids*/
+  height: 60px; /*for grids*/
   outline: $outline-item; /*for grids*/
   display: block;
+  margin: 0;
   margin-top: 27px;
+  padding: 0;
   list-style: none;
 }
 
